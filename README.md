@@ -1,7 +1,7 @@
 # 🍅Multi-Class Classification of Totato Leaf Diseases using CNN
 
 ## 📝Overview
-This project aims to classify 10 distinct totato plant leaf diseases using **Convolutional Neural Networks (CNNs)**. The model is deployed using **TensorFlow Serving** and the backend is built with **FastAPI**. The system is integrated with a **React.js** frontend for user interaction.
+This project aims to classify 10 distinct tomato plant leaf diseases using **Convolutional Neural Networks (CNNs)**. The model is deployed using **TensorFlow Serving** and the backend is built with **FastAPI**. The system is integrated with a **React.js** frontend for user interaction.
 
 ## 🛠️Tech Stack
 - **Machine Learning & Deep Learning**: TensorFlow, Keras, matplotlib, NumPy, Pandas
@@ -38,8 +38,8 @@ uvicorn main:app --reload
 ### 🚢Model Deployment (TensorFlow Serving)
 ```bash
 docker run -p 8501:8501 --name=tf_serving \
-    -v "$(pwd)/model:/models/totato_model" \
-    -e MODEL_NAME=totato_model \
+    -v "$(pwd)/model:/models/tomato_model" \
+    -e MODEL_NAME=tomato_model \
     tensorflow/serving
 ```
 ### 🎨Frontend Setup
